@@ -1,0 +1,4 @@
+El proyecto presentado, es el mismo que hice para la primera entrega. 
+Se adjunta el mismo wireframe. 
+Se corrigió la sintaxis, se agregó Grid y se hicieron Responsive la Pagina de Registro y Ofertas (con boostrap). 
+A la pagina de Nosotros pude hacerla a traves de media queris pero no quedo funcionando correctamente en dispositivo movil, en el navegador de la PC si lo puedo observar que se adapta bien.

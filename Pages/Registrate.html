@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de registro con Bootstrap responsive</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/Style.css">
+  <style>
+    .label-blanco {
+      color: white;
+    }
+  </style>
+
+</head>
+<body class="formulario-negro">
+    <div class="headerq">
+        <section class="img_section2">
+            <img src="../img/28t1.gif" alt="LogoBanner" width="25%" />
+            <img src="../img/Captura.PNG" alt="Logo Pintuería" width="25%" />
+          </section>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__item">
+                <a class="header__link" href="../index.html">Home</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="./Pages/QuienesSomos.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="../Pages/Sucursales.html"
+                  >Sucursales</a
+                >
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="../Pages/Ofertas.html">Ofertas</a>
+              </li>
+              
+            </ul>
+          </nav>
+    </div>
+  
+    <h1 class="text-center text-white">Registro de usuario</h1>
+
+    <form class="row g-3 p-4 mx-8">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <label for="nombre" class="form-label label-blanco">Nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <label for="apellido" class="form-label label-blanco">Apellido</label>
+        <input type="text" class="form-control" id="apellido" required>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <label for="correo" class="form-label label-blanco">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" required>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <label for="usuario" class="form-label label-blanco">Usuario</label>
+        <input type="text" class="form-control" id="usuario" required>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <label for="contrasena" class="form-label label-blanco">Contraseña</label>
+        <input type="password" class="form-control" id="contrasena" required>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+        <button type="reset" class="btn btn-secondary">Limpiar</button>
+        <a href="#" class="btn btn-outline-primary">Iniciar sesión</a>
+      </div>
+    </form>
+    
+  
+  <div class="footerq">
+    <div class="img_rrss"><img src="../img/pngegg.png" alt="redes" width="50rem"></div>
+    <h4>Todos los derechos reservados©</h4>
+    <div class="logowsp"><a href="https://api.whatsapp.com/send?phone=5493513639410&text=Hola! quiero consultarte por unos productos" target="_blank"><img src="../img/pngwing.com.png" alt="Logo Whatsapp" width="35rem"></a></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
