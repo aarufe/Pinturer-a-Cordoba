@@ -1,0 +1,40 @@
+
+.containers {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr 2.1fr 0.4fr;
+	gap: 0px 0px;
+	grid-template-areas: "headers headers headers headers" "mains mains asides asides" "footers footers footers footers";
+}
+.headers {
+	grid-area: headers;
+}
+.footers {
+	grid-area: footers;
+	text-align: center;
+	color: $color_4;
+	background: rgb(0, 7, 104);
+	background: radial-gradient( circle, rgba(114, 251, 63, 1) 0%, rgb(14, 10, 34) 100% );
+	padding: 20px;
+	font-size: large;
+}
+.mains {
+	grid-area: mains;
+	color: $color_6;
+	padding: 10%;
+}
+.asides {
+	grid-area: asides;
+}
+
+.titulo {
+	text-align: left;
+}
+@media (max-width:600px) {.containers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    gap: 3px;
+    grid-auto-flow: row;
+    grid-template-areas: "headers" "asides" "asides" "mains" "footers";
+}}

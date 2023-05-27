@@ -1,15 +1,7 @@
-$color_1: rgb(238, 53, 62);
-$color_2: rgb(218, 38, 38);
-$color_3: rgb(0, 0, 0);
-$color_4: black;
-$color_5: rgb(255, 255, 255);
-$color_6: aliceblue;
-$color_7: #ffffff;
-$font-family_1: Arial, Helvetica, sans-serif;
-$font-family_2: "Raleway", sans-serif;
-$background-color_1: rgb(0, 0, 0);
-$background-color_2: rgb(2, 2, 2);
-$background-color_3: rgb(238, 53, 62);
+@import "var";
+@import "Index";
+@import "QuienesSomos";
+@import "Sucursales";
 
 * {
 	margin: 0;
@@ -53,41 +45,7 @@ h1 {
 		border-radius: 20px;
 	}
 }
-.containerH {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 0.6fr 2.2fr 0.6fr 0.6fr;
-	grid-auto-columns: 1fr;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas: "header" "LineasH" "CuerpoH" "MarcasH" "footer";
-}
-.header {
-	grid-area: header;
-	grid-area: header;
-}
-.LineasH {
-	grid-area: LineasH;
-	text-align: center;
-}
-.CuerpoH {
-	grid-area: CuerpoH;
-	text-align: center;
-}
-.MarcasH {
-	grid-area: MarcasH;
-	text-align: center;
-}
-.footer {
-	grid-area: footer;
-	grid-area: footer;
-	text-align: center;
-	color: $color_4;
-	background: rgb(0, 7, 104);
-	background: radial-gradient( circle, rgba(114, 251, 63, 1) 0%, rgb(14, 10, 34) 100% );
-	padding: 20px;
-	font-size: large;
-}
+
 .contenedor-imagenes {
 	width: 500px;
 	img {
@@ -151,95 +109,9 @@ h1 {
 .header2 {
 	grid-area: header2;
 }
-.Banner {
-	grid-area: Banner;
-	width: 100%;
-}
-.foto4 {
-	grid-area: foto4;
-	opacity: .5;
-	&:hover {
-		opacity: 1;
-	}
-}
-.foto1 {
-	grid-area: foto1;
-	opacity: .5;
-	&:hover {
-		opacity: 1;
-	}
-}
-.foto2 {
-	grid-area: foto2;
-	opacity: .5;
-	&:hover {
-		opacity: 1;
-	}
-}
-.foto3 {
-	grid-area: foto3;
-	opacity: .5;
-	&:hover {
-		opacity: 1;
-	}
-}
-.foto5 {
-	grid-area: foto5;
-	opacity: .5;
-	&:hover {
-		opacity: 1;
-	}
-}
-.foto6 {
-	grid-area: foto6;
-	opacity: .5;
-	&:hover {
-		opacity: 1;
-	}
-}
-.foto7 {
-	grid-area: foto7;
-	opacity: .5;
-	&:hover {
-		opacity: 1;
-	}
-}
-.foto8 {
-	grid-area: foto8;
-	opacity: .5;
-	&:hover {
-		opacity: 1;
-	}
-}
-.foto9 {
-	grid-area: foto9;
-	opacity: .5;
-	&:hover {
-		opacity: 1;
-	}
-}
-.container3 {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 0.5fr;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas: "headerQ headerQ headerQ headerQ" "Main Main Aside Aside" "Main Main Aside Aside" "footerq footerq footerq footerq";
-}
-.headerq {
-	grid-area: headerQ;
-}
-.footerq {
-	grid-area: footerq;
+.banner {
 	text-align: center;
-	color: $color_4;
-	background: rgb(0, 7, 104);
-	background: radial-gradient( circle, rgba(114, 251, 63, 1) 0%, rgb(14, 10, 34) 100% );
-	padding: 20px;
-	font-size: large;
+	width: 90%;
 }
 .Main {
 	grid-area: Main;
@@ -254,99 +126,10 @@ h1 {
 	grid-area: Aside;
 	text-align: center;
 }
-.containers {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 0.5fr 2.1fr 0.4fr;
-	gap: 0px 0px;
-	grid-template-areas: "headers headers headers headers" "mains mains asides asides" "footers footers footers footers";
-}
-.headers {
-	grid-area: headers;
-}
-.footers {
-	grid-area: footers;
-	text-align: center;
-	color: $color_4;
-	background: rgb(0, 7, 104);
-	background: radial-gradient( circle, rgba(114, 251, 63, 1) 0%, rgb(14, 10, 34) 100% );
-	padding: 20px;
-	font-size: large;
-}
-.mains {
-	grid-area: mains;
-	color: $color_6;
-	padding: 10%;
-}
-.asides {
-	grid-area: asides;
-}
-#galeria {
-	img {
-		width: 100%;
-		height: 300px;
-		opacity: 0.5;
-		&:hover {
-			border: 5px solid #f7f7f7;
-			opacity: 1;
-		}
-	}
-	.col-lg-4 {
-		padding: 25px;
-		margin: 0;
-	}
-}
-.titulo {
-	text-align: left;
-}
-.containers-QS {
-	display: grid;
-	grid-template-columns: 0.9fr 1.1fr;
-	grid-template-rows: 0.8fr 2.6fr 0.7fr;
-	grid-auto-columns: 1fr;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas: "Headers Headers" "Mains Asides" "Footers Footers";
-}
-.Headers {
-	grid-area: Headers;
-}
-.Footers {
-	grid-area: Footers;
-	text-align: center;
-	color: $color_4;
-	background: rgb(0, 7, 104);
-	background: radial-gradient( circle, rgba(114, 251, 63, 1) 0%, rgb(14, 10, 34) 100% );
-	padding: 20px;
-	font-size: large;
-}
-.Mains {
-	grid-area: Mains;
-	color: $color_7;
-	font-size: 1.3rem;
-	padding: 5px;
-}
-.Asides {
-	grid-area: Asides;
-	text-align: center;
-}
-@media (max-width:600px) {
-	.containeH {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 5fr;
-		gap: 3px;
-		grid-auto-flow: row;
-		grid-template-areas: "header" "LineasH" "CuerpoH" "MarcasH" "footer";
-	}
-	.containers {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 5fr;
-		gap: 3px;
-		grid-auto-flow: row;
-		grid-template-areas: "headers" "asides" "asides" "mains" "footers";
-	}
+
+
+
+	
 	.containerofer {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -359,12 +142,19 @@ h1 {
 		grid-template-areas: "header2 header2" "Banner Banner" ". foto1 foto2." ". foto3 foto4." ". foto5 foto6." ". foto7 foto8." ". foto9." "footer2 footer2.";
 		font-size: 0,5px;
 	}
-	.containers-QS {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 5fr;
-		gap: 3px;
-		grid-auto-flow: row;
-		grid-template-areas: "Headers" "Asides" "Mains" "Footers";
-	}
+	
+
+.footerq {
+grid-area: footerq;
+text-align: center;
+color:black;
+background: rgb(0, 7, 104);
+background: radial-gradient(
+  circle,
+  rgba(114, 251, 63, 1) 0%,
+  rgb(14, 10, 34) 100%
+);
+padding: 20px;
+font-size: large;
+
 }
