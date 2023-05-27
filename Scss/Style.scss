@@ -10,6 +10,7 @@
 }
 .imglogo {
 	text-align: center;
+    
 }
 body {
 	font-family: $font-family_1;
@@ -61,7 +62,9 @@ h1 {
 .img_rrss {
 	text-align: left;
 	padding: 20px;
+    
 }
+
 .listaa {
 	text-decoration: none;
 	text-align: center;
@@ -76,15 +79,15 @@ h1 {
 	}
 }
 .logowsp {
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
 	position: fixed;
 	bottom: 20px;
 	right: 40px;
-}
+    }
 .rrss {
-	width: 40rem;
-	height: 40rem;
+	width: 120rem;
+	height: 120rem;
 	bottom: 20rem;
 	left: 40rem;
 }
@@ -158,3 +161,14 @@ padding: 20px;
 font-size: large;
 
 }
+
+.transofer{
+    width: 95%;
+    height: 2rem;
+    background-color: rgb(0, 0, 26);
+    transition: all 2s;
+}
+.transofer:hover{
+    background-color: rgb(4, 124, 24);
+    height:4rem ;
+    transform: rotate Z(20deg);}

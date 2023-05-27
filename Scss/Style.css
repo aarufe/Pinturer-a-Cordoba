@@ -225,16 +225,16 @@ h1 {
 }
 
 .logowsp {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   position: fixed;
   bottom: 20px;
   right: 40px;
 }
 
 .rrss {
-  width: 40rem;
-  height: 40rem;
+  width: 120rem;
+  height: 120rem;
   bottom: 20rem;
   left: 40rem;
 }
@@ -304,4 +304,17 @@ h1 {
   background: radial-gradient(circle, rgb(114, 251, 63) 0%, rgb(14, 10, 34) 100%);
   padding: 20px;
   font-size: large;
+}
+
+.transofer {
+  width: 95%;
+  height: 2rem;
+  background-color: rgb(0, 0, 26);
+  transition: all 2s;
+}
+
+.transofer:hover {
+  background-color: rgb(4, 124, 24);
+  height: 4rem;
+  transform: rotate Z(20deg);
 }/*# sourceMappingURL=Style.css.map */

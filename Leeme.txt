@@ -1,4 +1,19 @@
+Segunda entrega
 El proyecto presentado, es el mismo que hice para la primera entrega. 
 Se adjunta el mismo wireframe. 
 Se corrigió la sintaxis, se agregó Grid y se hicieron Responsive la Pagina de Registro y Ofertas (con boostrap). 
 A la pagina de Nosotros pude hacerla a traves de media queris pero no quedo funcionando correctamente en dispositivo movil, en el navegador de la PC si lo puedo observar que se adapta bien.
+
+Tercera Entrega.
+Se hacen responsive todas las páginas del proyecto.
+Se usa gradientes en todos los footers.
+Se implementa Sass con el uso de Imports, Variables y Nesting.
+Se corrige observación del tutor sobre el espaciado de las imagenes en la pagina de Ofertas.
+Se aplica transicion y Animación debajo del banner de promociones cuando el cursor se pasa sobre la palabra Ofertas🛒.
+Se aplica animación de texto en el footer en el texto "Todos los dereches reservados"
+Se aplica animaciones a los banners del Index
+Se agrega QR en el footer con acceso a redes sociales.
+Se agregan etiquetas Meta.
+
+*Observación: no pude hacer funcionar Sass a través del compilador de la terminal, me da un error que no reconoce el comando. Por este motivo tuve que compilar a traves de la extensión.
+Por este motivo me creó el archivo CSS dentro de la carpeta SCSS y no CSS
