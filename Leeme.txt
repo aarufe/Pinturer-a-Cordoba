@@ -14,6 +14,7 @@ Se aplica animación de texto en el footer en el texto "Todos los dereches reser
 Se aplica animaciones a los banners del Index
 Se agrega QR en el footer con acceso a redes sociales.
 Se agregan etiquetas Meta.
+Se agrega Favicon
 
 *Observación: no pude hacer funcionar Sass a través del compilador de la terminal, me da un error que no reconoce el comando. Por este motivo tuve que compilar a traves de la extensión.
 Por este motivo me creó el archivo CSS dentro de la carpeta SCSS y no CSS
