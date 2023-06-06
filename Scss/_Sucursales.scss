@@ -1,4 +1,5 @@
 
+
 .containers {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -38,3 +39,13 @@
     grid-auto-flow: row;
     grid-template-areas: "headers" "asides" "asides" "mains" "footers";
 }}
+
+@media (max-width: 600px) {
+	.containers P {
+		text-align:justify  ;
+		grid-area: Mains;
+		color: $color_7;
+		font-size: 14px;
+		padding: 5px;
+	}
+  }
