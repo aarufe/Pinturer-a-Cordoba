@@ -1,35 +1,37 @@
-
-
 .containers-QS {
-	display: grid;
-	grid-template-columns: 0.9fr 1.1fr;
-	grid-template-rows: 0.8fr 2.6fr 0.7fr;
-	grid-auto-columns: 1fr;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas: "Headers Headers" "Mains Asides" "Footers Footers";
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-rows: 0.8fr 2.6fr 0.7fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Headers Headers" "Mains Asides" "Footers Footers";
 }
 .Headers {
-	grid-area: Headers;
+  grid-area: Headers;
 }
 .Footers {
-	grid-area: Footers;
-	text-align: center;
-	color: $color_4;
-	background: rgb(0, 7, 104);
-	background: radial-gradient( circle, rgba(114, 251, 63, 1) 0%, rgb(14, 10, 34) 100% );
-	padding: 20px;
-	font-size: large;
+  grid-area: Footers;
+  text-align: center;
+  color: $color_4;
+  background: rgb(0, 7, 104);
+  background: radial-gradient(
+    circle,
+    rgba(114, 251, 63, 1) 0%,
+    rgb(14, 10, 34) 100%
+  );
+  padding: 20px;
+  font-size: large;
 }
 .Mains {
-	grid-area: Mains;
-	color: $color_7;
-	font-size: 1.3rem;
-	padding: 5px;
+  grid-area: Mains;
+  color: $color_7;
+  font-size: 1.1rem;
+  padding: 5px;
 }
 .Asides {
-	grid-area: Asides;
-	text-align: center;
+  grid-area: Asides;
+  text-align: center;
 }
 @media (max-width: 600px) {
   .containers-QS {
@@ -39,15 +41,19 @@
     gap: 3px;
     grid-auto-flow: row;
     grid-template-areas: "Headers" "Asides" "Mains" "Footers";
-    
   }
 }
+
+//  @media (max-width:600px) {
+//  	.containers-QS {
+// 	font-size: 12px;
+// 	}}
 @media (max-width: 600px) {
-.mains P {
-	text-align:justify  ;
-	grid-area: mains;
-	color: $color_7;
-	font-size: 14px;
-	padding: 15px;
-	}
-	  }
+  .Mains P {
+    text-align: justify;
+    grid-area: mains;
+    color: $color_7;
+    font-size: 12px;
+    padding: 15px;
+  }
+}
