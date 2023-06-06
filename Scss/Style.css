@@ -1,0 +1,366 @@
+@charset "UTF-8";
+.containerI {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.6fr 1.9fr 0.9fr 0.6fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "LineasI" "CuerpoI" "MarcasI" "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.LineasI {
+  grid-area: LineasI;
+  text-align: center;
+}
+
+.CuerpoI {
+  grid-area: CuerpoI;
+  text-align: center;
+}
+
+.MarcasI {
+  grid-area: MarcasI;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  color: black;
+  background: rgb(0, 7, 104);
+  background: radial-gradient(circle, rgb(114, 251, 63) 0%, rgb(14, 10, 34) 100%);
+  padding: 20px;
+  font-size: large;
+}
+
+.containers-QS {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-rows: 0.8fr 2.6fr 0.7fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Headers Headers" "Mains Asides" "Footers Footers";
+}
+
+.Headers {
+  grid-area: Headers;
+}
+
+.Footers {
+  grid-area: Footers;
+  text-align: center;
+  color: black;
+  background: rgb(0, 7, 104);
+  background: radial-gradient(circle, rgb(114, 251, 63) 0%, rgb(14, 10, 34) 100%);
+  padding: 20px;
+  font-size: large;
+}
+
+.Mains {
+  grid-area: Mains;
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.Asides {
+  grid-area: Asides;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .containers-QS {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    gap: 3px;
+    grid-auto-flow: row;
+    grid-template-areas: "Headers" "Asides" "Mains" "Footers";
+    font-size: 14px; /* Ajusta el tamaño de fuente deseado */
+  }
+}
+@media (max-width: 600px) {
+  .mains P {
+    text-align: justify;
+    grid-area: mains;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+.containers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2.1fr 0.4fr;
+  gap: 0px 0px;
+  grid-template-areas: "headers headers headers headers" "mains mains asides asides" "footers footers footers footers";
+}
+
+.headers {
+  grid-area: headers;
+}
+
+.footers {
+  grid-area: footers;
+  text-align: center;
+  color: black;
+  background: rgb(0, 7, 104);
+  background: radial-gradient(circle, rgb(114, 251, 63) 0%, rgb(14, 10, 34) 100%);
+  padding: 20px;
+  font-size: large;
+}
+
+.mains {
+  grid-area: mains;
+  color: aliceblue;
+  padding: 10%;
+}
+
+.asides {
+  grid-area: asides;
+}
+
+.titulo {
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .containers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    gap: 3px;
+    grid-auto-flow: row;
+    grid-template-areas: "headers" "asides" "asides" "mains" "footers";
+  }
+}
+@media (max-width: 600px) {
+  .containers P {
+    text-align: justify;
+    grid-area: Mains;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+body {
+  background-color: #333;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container404 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imglogo {
+  text-align: center;
+  width: 95%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+
+h1 {
+  color: rgb(238, 53, 62);
+  text-align: center;
+  margin: 15px;
+}
+
+.header__nav {
+  width: 100%;
+  height: 90px;
+  background-color: rgb(2, 2, 2);
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.header__link {
+  color: rgb(218, 38, 38);
+  text-decoration: none;
+  padding: 0.7rem;
+}
+.header__link:hover {
+  background-color: rgb(238, 53, 62);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.contenedor-imagenes {
+  width: 500px;
+}
+.contenedor-imagenes img {
+  display: flex;
+  width: 49%;
+  margin: 0.5%;
+}
+
+.img_section2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.img_rrss {
+  text-align: left;
+  padding: 20px;
+}
+
+.listaa {
+  text-decoration: none;
+  text-align: center;
+}
+
+.lista {
+  text-align: center;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 200px;
+}
+.lista a {
+  text-decoration: none;
+}
+
+.logowsp {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+}
+
+.rrss {
+  width: 120rem;
+  height: 120rem;
+  bottom: 20rem;
+  left: 40rem;
+}
+
+.containerofer {
+  display: grid;
+  grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr 0.7fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header2 header2 header2 header2 header2" "Banner Banner Banner Banner Banner" ". foto1 foto2 foto3 ." ". foto4 foto5 foto6 ." ". foto7 foto8 foto9 ." "footer2 footer2 footer2 footer2 footer2";
+}
+
+.footer2 {
+  grid-area: footer2;
+  grid-area: footer2;
+  text-align: center;
+  color: black;
+  background: rgb(0, 7, 104);
+  background: radial-gradient(circle, rgb(114, 251, 63) 0%, rgb(14, 10, 34) 100%);
+  padding: 20px;
+  font-size: large;
+}
+
+.header2 {
+  grid-area: header2;
+}
+
+.banner {
+  text-align: center;
+  width: 90%;
+}
+
+.Main {
+  grid-area: Main;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-left: 5%;
+}
+
+.Aside {
+  grid-area: Aside;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.containerofer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header2 header2" "Banner Banner" ". foto1 foto2." ". foto3 foto4." ". foto5 foto6." ". foto7 foto8." ". foto9." "footer2 footer2.";
+  font-size: 0, 5px;
+}
+
+.footerq {
+  grid-area: footerq;
+  text-align: center;
+  color: black;
+  background: rgb(0, 7, 104);
+  background: radial-gradient(circle, rgb(114, 251, 63) 0%, rgb(14, 10, 34) 100%);
+  padding: 20px;
+  font-size: large;
+}
+
+.transofer {
+  width: 95%;
+  height: 2rem;
+  background-color: rgb(0, 0, 26);
+  transition: all 2s;
+}
+
+.transofer:hover {
+  background-color: rgb(4, 124, 24);
+  height: 4rem;
+  transform: rotate Z(20deg);
+}/*# sourceMappingURL=Style.css.map */
